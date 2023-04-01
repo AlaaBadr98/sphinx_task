@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational RC</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="main-container container ">
+    <div class="content">
+      <div class="taskContainer ">
+        <!-- frist section  -->
+        <div class=" frist-sec col-12 container">
+          <div class="title col-xs-11">
+            <h1>Complete the words.</h1>
+          </div>
+          <div class="button1" id="dummy-img" onclick="setDummyShow()">
+            <div class="btn-container ">
+              <img src="media/resourse_icon.png" class="rounded" alt="">
+            </div>
+          </div>
+
+          <div class="button1" id="question-img">
+            <div class="btn-container" id="help" onclick="setHelpBtn()">
+              <img src="media/help_icon.png" class="pull-right rounded" alt="">
+            </div>
+          </div>
+        </div>
+        <!--     page body  -->
+        <section class="col-xs-12 pageContainer">
+          <div class="pageContent col-xs-12">
+            <div id="myCarousel" class="carousel slide col-xs-12 " >
+
+              <!--     page body  -->
+              <section class=" page-body col-12 ">
+
+                <div class="col-xs-12 body-backgraound container"></div>
+                <div class="body-content col-xs-12">
+                  <!-- question section  -->
+                  <div class="slide  col-12 container" id="show">
+                    <div class="inner-slide container">
+                      <div class="itContainer container">
+                        <div class="answerContainer">
+                          <span class="solution " id="sol_1" onclick="saveSol('sol_1','a')">a</span>
+                          <span class="solution " id="sol_2" onclick="saveSol('sol_2','p')">p</span>
+                        </div>
+
+                        <div class="qContainer">
+                          <div class="col-12 q-12">
+                            <!-- start frist question  -->
+                            <div class=" option option_1 container">
+                              <div class="option-text">1 t<span class="optClick" onclick="putSol('a')" id="q_1">
+                                  <!-- stert show answar section  -->
+                                  <div class="col-3 " style="line-height: 0% ;">
+                                    <div id='q_1_sol' style="line-height: 0%; display: none;">
+                                      <div class="col-1">
+                                        <img src="media/tikMark-small.png" alt="">
+                                      </div>
+                                      <div class="col-1">
+                                        a
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <span>&#95;</span>
+                                    </div>
+                                  </div>
+
+                              </div>
+                              p
+                              <!-- End show answar section  -->
+
+                              <img src="media/tap.png" alt="">
+                            </div>
+
+                            <div class=" option option_2 container">
+                              <div class="option-text">2 <span class="optClick" onclick="putSol('p')" id="q_2">
+                                  <!-- stert show answar section  -->
+                                  <div class="col-3 " style="line-height: 0% ;">
+                                    <div id='q_2_sol' style="line-height: 0%; display: none;">
+                                      <div class="col-1">
+                                        <img src="media/tikMark-small.png" alt="">
+                                      </div>
+                                      <div class="col-1">
+                                        p
+                                      </div>
+                                    </div>
+                                    <div class="col-1">
+                                      <span>&#95;</span>
+                                    </div>
+                                  </div>
+
+                              </div>
+                              at
+                              <!-- End show answar section  -->
+
+                              <img src="media/bat.png" alt="">
+                            </div>
+
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="col-12 q-12">
+                        <div class=" option option_3 container">
+                          <div class="option-text">3 m <span class="optClick" onclick="putSol('a')" id="q_3">
+                              <!-- stert show answar section  -->
+                              <div class="col-3 " style="line-height: 0% ;">
+                                <div id='q_3_sol' style="line-height: 0%; display: none;">
+                                  <div class="col-1">
+                                    <img src="media/tikMark-small.png" alt="">
+                                  </div>
+                                  <div class="col-1">
+                                    a
+                                  </div>
+                                </div>
+                                <div class="col-1">
+                                  <span>&#95;</span>
+                                </div>
+                              </div>
+
+                          </div>
+                          p
+                          <!-- End show answar section  -->
+
+                          <img src="media/map.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- ***************************************** -->
+                  <div class="change" id="dummy-sec" style="display: none;">
+                    <button type="button" onclick="removeDummyShow() " class="btn btn-outline-danger x-btn">X</button>
+                    <div id="dummy">
+                      <img src="media/KidsFun.png" alt="">
+                    </div>
+                  </div>
+                  <div class="change" id="help-btn" style="display: none;">
+                    <button type="button" onclick="removeDummyShow() " class="btn btn-outline-danger x-btn">X</button>
+                    <p> Help content goes here. </p>
+                  </div>
+                </div>
+
+
+                <!-- ***************************************** -->
+            </div>
+        </section>
+        <!-- third section  -->
+        <div class="row container">
+          <div class="footer">
+            <div class="button1" id="restart" onclick="restart()">
+              <div class="btn-container ">
+                <img src="media/replay_icon.png" class="rounded" alt="">
+              </div>
+            </div>
+            <div class="button1" id="answar" onclick="showAnswar()">
+              <div class="btn-container ">
+                <img src="media/showAns_icon.png" class="rounded" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <audio id="correct">
+    <source src="media/correct.mp3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="incorrect">
+    <source src="media/incorrect.mp3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
+
+
+</body>
+
+</html>
