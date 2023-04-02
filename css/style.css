@@ -21,6 +21,7 @@ body{
     top: 0px;
     animation-name: reloadpage;
     animation-duration: 2s;
+    width: inherit;
 }
 @keyframes reloadpage{
     from{left:90%; top:100px}
@@ -33,11 +34,12 @@ body{
     overflow: hidden;
 }
 .frist-sec{
-    height: 124.8px;
+    height: 10em;
     display: flex;
     padding: 0;
     align-items: center;
     overflow: hidden;
+    margin: 0 !important;
 }
 .title{
     display: inline-block;
@@ -224,10 +226,11 @@ font-size: 50px;
   }
 
   /* footer  */
-  .row{
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: -30px !important;
+
+  .footerContainer{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 10em;
   }
   .footer{ 
     display: flex;
@@ -235,12 +238,7 @@ font-size: 50px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 170px;
-    width: 100%;
-    overflow: hidden;
     background-color: #deecf6;
-    margin-top: -11.25pt;
-    padding-top: 15px;
-    /* margin-left: 10%;*/
-    padding-bottom: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
