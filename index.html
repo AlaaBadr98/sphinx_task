@@ -14,7 +14,7 @@
 
 <body>
   <div class="col-12 ">
-    <div class="content">
+    <div class="content" id="all">
       <div class="taskContainer ">
         <!-- frist section  -->
         <div class=" frist-sec col-12 ">
@@ -34,12 +34,94 @@
           </div>
         </div>
         <!--     page body  -->
-<div class="pageContainer col-12">
+        <div class="pageContainer col-12">
+          <div class="body-backgraound col-12"> </div>
+          <div class="body-content ">
+            <div class="inner-slide">
+              <div id="show" style="width: 100%;">
+                <!-- ******************************************************************** -->
+                <div class="answerContainer">
+                  <span class="solution " id="sol_1" onclick="saveSol(1,'a')">a</span>
+                  <span class="solution " id="sol_2" onclick="saveSol(2,'p')">p</span>
+                </div>
+                <!-- ******************************************************************** -->
+                <div class="questionContainer">
+                  <div class="q-12">
+                    <div class="option " id="option-1">
+                        <div class="option-text">
+                          <div>1 t </div>
+                          <div class="optClick" onclick="putSol(1,'a')" id="q_1">
+                            <div div id='q_1_sol' style="line-height: 0%; display: none;">
+                              <div><img id='img-1' src="media/tikMark-small.png" alt=""></div>
+                            <div id="ans-1">a</div>
+                            </div>
+                            <div style="font-weight: bold;font-size: 1.5em;"><span> &#9; &#95; &#9; </span></div>
+                          </div>
+                          <div> p</div>
+                        </div>
+                        <div><img src="media/tap.png" alt=""></div>
+                    </div>
+                    <!-- *************************************************** -->
+                    <div>
+                      <div class="option " id="option-2">
+                        <div class="option-text">
+                          <div>2 </div>
+                          <div class="optClick" onclick="putSol(2,'p')" id="q_2">
+                            <div div id='q_2_sol' style="line-height: 0%; display: none;">
+                              <div><img id="img-2" src="media/tikMark-small.png" alt=""></div>
+                            <div id="ans-2">p</div>
+                            </div>
+                            <div style="font-weight: bold;font-size: 1.5em;"><span> &#9; &#95; &#9; </span></div>
+                          </div>
+                          <div> at</div>
+                        </div>
+                        <div><img src="media/bat.png" alt=""></div>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- ***************************************************************** -->
+                  <div>
+                    <div class="option " id="option-3">
+                      <div class="option-text">
+                        <div>3 m </div>
+                        <div class="optClick" onclick="putSol(3,'a')" id="q_3">
+                          <div div id='q_3_sol' style="line-height: 0%; display: none;">
+                            <div><img id='img-3' src="media/tikMark-small.png" alt=""></div>
+                          <div id="ans-3">a</div>
+                          </div>
+                          <div style="font-weight: bold;font-size: 1.5em;"><span> &#9; &#95; &#9; </span></div>
+                        </div>
+                        <div> p</div>
+                      </div>
+                      <div><img src="media/map.png" alt=""></div>
+                  </div>
+                  </div>
+                </div>
+                <!-- ******************************************************************** -->
+                <div></div>
+              </div>
+              <!-- ************************************************************************* -->
+              <div class="change" id="dummy-sec" style="display: none;">
+                <button type="button" onclick="removeDummyShow() " class="btn btn-outline-danger x-btn">X</button>
+                <div id="dummy">
+                  <img src="media/KidsFun.png" alt="">
+                </div>
+              </div>
+              <!-- ************************************************************************* -->
+              <div class="change" id="help-btn" style="display: none;">
+                <button type="button" onclick="removeDummyShow() " class="btn btn-outline-danger x-btn">X</button>
+                <p> Help content goes here. </p>
+              </div>
+              <!-- ************************************************************************* -->
+            </div>
 
 
 
+          </div>
 
-</div>
+
+
+        </div>
 
 
         <!-- ***************************************** -->
@@ -65,8 +147,8 @@
     </div>
 
   </div>
-  <audio id="correct">
-    <source src="media/correct.mp3.mp3" type="audio/mpeg">
+  <audio id="correct" >
+    <source src="media/rightanswer-95219.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <audio id="incorrect">

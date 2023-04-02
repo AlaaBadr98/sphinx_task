@@ -6,6 +6,10 @@ body{
     line-height: 1.2;
     background-color: #fff;
     font-size: 12pt;
+    height: 620px;
+    width: 1023px;
+    
+     
 }
 .container{
     
@@ -20,12 +24,12 @@ body{
     left: 15%;
     top: 0px;
     animation-name: reloadpage;
-    animation-duration: 2s;
+    animation-duration: 1s;
     width: inherit;
 }
 @keyframes reloadpage{
-    from{left:90%; top:100px}
-    to{left:15%;top:0}
+    from{scale: 3;}
+    to{scale: 1;}
 }
 .taskContainer{
     padding: 0;
@@ -34,7 +38,7 @@ body{
     overflow: hidden;
 }
 .frist-sec{
-    height: 10em;
+    height: 5em;
     display: flex;
     padding: 0;
     align-items: center;
@@ -81,15 +85,16 @@ margin: 1%;
 }
 .body-backgraound{
     position: absolute;
-    height: 80%;
-    left: 3%;
+    height: 72%;
+    /* left: -4%; */
     background-color: #0fa0c5 !important;
-    top: 15%;
+    top: 10%;
     
 }
 .body-content{
-    position: relative;
-    /* height: 725.4px; */
+   position: relative;
+    height: 45em;
+    width: 96%;
     background-color: #fff;
     border-radius: 1.25pc;
     border-image: none;
@@ -98,33 +103,38 @@ margin: 1%;
     border-width: 3.75pt;
     z-index: 1;
     padding-top: 0.625pc;
-    padding-bottom:0.625pc ;
+    padding-bottom: 0.625pc;
     padding-right: 15pt;
     left: 2%;
     bottom: 3%;
 }
 .slide{
-    height: 100%;
+    /* height: 100%;
     font-size: 50px;
-    position: relative;
+    position: relative; */
 }
 .inner-slide{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     font-size: 50px;
 
 }
-.itemContainer{
+/* .itemContainer{
     margin-top: 2.5pc;
-}
+} */
 .answerContainer{
     margin-bottom: 50px;
     text-align: center;
 }
 .questionContainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3%;
@@ -162,14 +172,15 @@ font-size: 50px;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    width: 100%;
 
 }
 .option{
-    font-size: 50px;
     padding-right: 15px;
     padding-left: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -178,22 +189,25 @@ font-size: 50px;
     font-weight: bold;
     text-align: center;
     font-size: 0.5em;
+    justify-content: center;
+    align-items: flex-end;
 
 }
 .optClick{
-    margin: 0 0.625pc 0 0.625pc;
+    /*margin: 0 0.625pc 0 0.625pc; */
     cursor: pointer;
-    padding-left: 0.3125pc;
+    /* padding-left: 0.3125pc; */
     font-weight: bold;
     display: inline-block;
-    width: 45pt;
-    height: 70px;
+    /* width: 45pt; */
+    /* height: 70px; */
     position: relative;
-    font-size: 50px;
+    /* font-size: 50px; */
     text-align: center;
 }
 .option-text img{
-    margin-left: 20px
+    width: 2em;
+    /* margin-left: 20px */
 }
 .active{
     background-color :#0fa0c5;
@@ -205,8 +219,10 @@ font-size: 50px;
 /* dummy button  */
  .change{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
  }
@@ -242,3 +258,124 @@ font-size: 50px;
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+    /* --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px; */
+
+    @media only screen and (max-width: 1400px) {
+       
+     body {
+          transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.9);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+    left: 15%;
+        }
+      }
+      @media only screen and (max-width: 1200px) {
+       
+        body {
+             transition: all 500ms ease-in-out !important;
+       transform-origin: top left;
+       transform: scale(0.8);
+       animation-name: reloadpage;
+       animation-duration: 1s;
+           }
+         }
+         @media only screen and (max-width: 992px) {
+       
+            body {
+                 transition: all 500ms ease-in-out !important;
+           transform-origin: top left;
+           transform: scale(0.7);
+           animation-name: reloadpage;
+           animation-duration: 1s;
+               }
+             }@media only screen and (max-width: 768px) {
+       
+                body {
+                     transition: all 500ms ease-in-out !important;
+               transform-origin: top left;
+               transform: scale(0.6);
+               animation-name: reloadpage;
+               animation-duration: 1s;
+                   }
+                 }@media only screen and (max-width: 576px) {
+       
+                    body {
+                         transition: all 500ms ease-in-out !important;
+                   transform-origin: top left;
+                   transform: scale(0.8);
+                   animation-name: reloadpage;
+                   animation-duration: 1s;
+                       }
+                     }
+                     @media only screen and (max-width: 588px) {
+       
+                        body {
+                             transition: all 500ms ease-in-out !important;
+                       transform-origin: top left;
+                       transform: scale(0.6);
+                       animation-name: reloadpage;
+                       animation-duration: 1s;
+                           }
+                         }
+                         @media only screen and (max-width: 544px) {
+       
+                            body {
+                                 transition: all 500ms ease-in-out !important;
+                           transform-origin: top left;
+                           transform: scale(0.5);
+                           animation-name: reloadpage;
+                           animation-duration: 1s;
+                           left: 0;
+                               }
+                             }
+                             @media only screen and (max-width: 455px) {
+       
+                                body {
+                                     transition: all 500ms ease-in-out !important;
+                               transform-origin: top left;
+                               transform: scale(0.4);
+                               animation-name: reloadpage;
+                               animation-duration: 1s;
+                                   }
+                                 }
+                                 @media only screen and (max-width: 360px) {
+       
+                                    body {
+                                         transition: all 500ms ease-in-out !important;
+                                   transform-origin: top left;
+                                   transform: scale(0.35);
+                                   animation-name: reloadpage;
+                                   animation-duration: 1s;
+                                   left: 0;
+                                       }
+                                     }
+                                     @media only screen and (max-width: 311px) {
+       
+                                        body {
+                                             transition: all 500ms ease-in-out !important;
+                                       transform-origin: top left;
+                                       transform: scale(0.3);
+                                       animation-name: reloadpage;
+                                       animation-duration: 1s;
+                                       left: 0;
+                                           }
+                                         }
+                                         @media only screen and (max-width: 270px) {
+       
+                                            body {
+                                                 transition: all 500ms ease-in-out !important;
+                                           transform-origin: top left;
+                                           transform: scale(0.2);
+                                           animation-name: reloadpage;
+                                           animation-duration: 1s;
+                                           left: 0;
+                                               }
+                                             }
