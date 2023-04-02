@@ -1,381 +1,369 @@
-body{
-    overflow: hidden;
-    margin: 0%;
-    padding: 0%;
-    color: black;
-    line-height: 1.2;
-    background-color: #fff;
-    font-size: 12pt;
-    height: 620px;
-    width: 1023px;
-    
-     
+body {
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  color: black;
+  line-height: 1.2;
+  background-color: #fff;
+  font-size: 12pt;
+  height: 620px;
+  width: 1023px;
 }
-.container{
-    
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+.container {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
-.content{
-    position: absolute;
-    transition: all 500ms ease-in-out !important;
-    transform-origin: top left;
-    transform: scale(0.725);
-    left: 15%;
-    top: 0px;
-    animation-name: reloadpage;
-    animation-duration: 1s;
-    width: inherit;
+.content {
+  position: absolute;
+  transition: all 500ms ease-in-out !important;
+  transform-origin: top left;
+  transform: scale(0.725);
+  left: 15%;
+  top: 0px;
+  animation-name: reloadpage;
+  animation-duration: 1s;
+  width: inherit;
 }
-@keyframes reloadpage{
-    from{scale: 3;}
-    to{scale: 1;}
+@keyframes reloadpage {
+  from {
+    scale: 3;
+  }
+  to {
+    scale: 1;
+  }
 }
-.taskContainer{
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.taskContainer {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.frist-sec{
-    height: 5em;
-    display: flex;
-    padding: 0;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 !important;
+.frist-sec {
+  height: 5em;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 !important;
 }
-.title{
-    display: inline-block;
-width: 95%;
-margin: 1%;
-
+.title {
+  display: inline-block;
+  width: 95%;
+  margin: 1%;
 }
-.title h1{
-    font-size: 38px;
-    margin: 0%;
-    font-family: emoji;
+.title h1 {
+  font-size: 38px;
+  margin: 0%;
+  font-family: emoji;
 }
-.button1{
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-bottom:1% ;
-    margin-right:0% ;
-    width: 8%;
-    float: right;
-  
+.button1 {
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  margin-right: 0%;
+  width: 8%;
+  float: right;
 }
-.btn-container{
-    cursor: pointer;
+.btn-container {
+  cursor: pointer;
 }
-.btn-container img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+.btn-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*      page body    */
-.page-body{
-    padding-top: 0;
-    padding-left: 10%;
-    padding-bottom: 0;
-    padding-right: 10%;
-    width: 100%;
-
+.page-body {
+  padding-top: 0;
+  padding-left: 10%;
+  padding-bottom: 0;
+  padding-right: 10%;
+  width: 100%;
 }
-.body-backgraound{
-    position: absolute;
-    height: 72%;
-    /* left: -4%; */
-    background-color: #0fa0c5 !important;
-    top: 10%;
-    
+.body-backgraound {
+  position: absolute;
+  height: 72%;
+  /* left: -4%; */
+  background-color: #0fa0c5 !important;
+  top: 10%;
 }
-.body-content{
-   position: relative;
-    height: 45em;
-    width: 96%;
-    background-color: #fff;
-    border-radius: 1.25pc;
-    border-image: none;
-    border-color: #f5821f;
-    border-style: solid;
-    border-width: 3.75pt;
-    z-index: 1;
-    padding-top: 0.625pc;
-    padding-bottom: 0.625pc;
-    padding-right: 15pt;
-    left: 2%;
-    bottom: 3%;
+.body-content {
+  position: relative;
+  height: 45em;
+  width: 96%;
+  background-color: #fff;
+  border-radius: 1.25pc;
+  border-image: none;
+  border-color: #f5821f;
+  border-style: solid;
+  border-width: 3.75pt;
+  z-index: 1;
+  padding-top: 0.625pc;
+  padding-bottom: 0.625pc;
+  padding-right: 15pt;
+  left: 2%;
+  bottom: 3%;
 }
-.slide{
-    /* height: 100%;
+.slide {
+  /* height: 100%;
     font-size: 50px;
     position: relative; */
 }
-.inner-slide{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    font-size: 50px;
-
+.inner-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  font-size: 50px;
 }
 /* .itemContainer{
     margin-top: 2.5pc;
 } */
-.answerContainer{
-    margin-bottom: 50px;
-    text-align: center;
+.answerContainer {
+  margin-bottom: 50px;
+  text-align: center;
 }
-.questionContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
 }
-.solution{
-display: inline-block;
-margin-bottom: 15px;
-margin-right: 0.15625in;
-font-weight: bold;
-border-radius: 1.25pc;
-padding: 0 20px 5px 20px;
-border-image: none;
-border-color: #0fa0c5;
-border-style: solid;
-border-width: .03125in;
-cursor: pointer;
-text-align: center;
-font-size: 50px;
+.solution {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 0.15625in;
+  font-weight: bold;
+  border-radius: 1.25pc;
+  padding: 0 20px 5px 20px;
+  border-image: none;
+  border-color: #0fa0c5;
+  border-style: solid;
+  border-width: 0.03125in;
+  cursor: pointer;
+  text-align: center;
+  font-size: 50px;
 }
-.qContainer{
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+.qContainer {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.q-12{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30pt;
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
+.q-12 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30pt;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+.option {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.option-text {
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.5em;
+  justify-content: center;
+  align-items: flex-end;
 }
-.option{
-    padding-right: 15px;
-    padding-left: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.optClick {
+  /*margin: 0 0.625pc 0 0.625pc; */
+  cursor: pointer;
+  /* padding-left: 0.3125pc; */
+  font-weight: bold;
+  display: inline-block;
+  /* width: 45pt; */
+  /* height: 70px; */
+  position: relative;
+  /* font-size: 50px; */
+  text-align: center;
 }
-
-
-.option-text{
-    display: flex;
-    font-weight: bold;
-    text-align: center;
-    font-size: 0.5em;
-    justify-content: center;
-    align-items: flex-end;
-
+.option-text img {
+  width: 2em;
+  /* margin-left: 20px */
 }
-.optClick{
-    /*margin: 0 0.625pc 0 0.625pc; */
-    cursor: pointer;
-    /* padding-left: 0.3125pc; */
-    font-weight: bold;
-    display: inline-block;
-    /* width: 45pt; */
-    /* height: 70px; */
-    position: relative;
-    /* font-size: 50px; */
-    text-align: center;
-}
-.option-text img{
-    width: 2em;
-    /* margin-left: 20px */
-}
-.active{
-    background-color :#0fa0c5;
-    color: #fff;
+.active {
+  background-color: #0fa0c5;
+  color: #fff;
 }
 
 /* extra buttons  */
 
 /* dummy button  */
- .change{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
- }
- .x-btn{
-    align-self: flex-end;
-    margin: 1%;
-    font-family: emoji;
- }
-#dummy{
-    margin-top: 8%;
-    animation-name: imgAnimation;
+.change {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.x-btn {
+  align-self: flex-end;
+  margin: 1%;
+  font-family: emoji;
+}
+#dummy {
+  margin-top: 8%;
+  animation-name: imgAnimation;
   animation-duration: 4s;
 }
 @keyframes imgAnimation {
-    from {margin-top: 0;}
-    to {margin-top: 8%;}
+  from {
+    margin-top: 0;
   }
-
-  /* footer  */
-
-  .footerContainer{
-    margin: 0 !important;
-    padding: 0 !important;
-    height: 10em;
+  to {
+    margin-top: 8%;
   }
-  .footer{ 
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #deecf6;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
-    /* --bs-breakpoint-xs: 0;
+/* footer  */
+
+.footerContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 10em;
+}
+.footer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #deecf6;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* --bs-breakpoint-xs: 0;
     --bs-breakpoint-sm: 576px;
     --bs-breakpoint-md: 768px;
     --bs-breakpoint-lg: 992px;
     --bs-breakpoint-xl: 1200px;
     --bs-breakpoint-xxl: 1400px; */
 
-    @media only screen and (max-width: 1400px) {
-       
-     body {
-          transition: all 500ms ease-in-out !important;
+@media only screen and (max-width: 1400px) {
+  body {
+    transition: all 500ms ease-in-out !important;
     transform-origin: top left;
     transform: scale(0.9);
     animation-name: reloadpage;
     animation-duration: 1s;
     left: 15%;
-        }
-      }
-      @media only screen and (max-width: 1200px) {
-       
-        body {
-             transition: all 500ms ease-in-out !important;
-       transform-origin: top left;
-       transform: scale(0.8);
-       animation-name: reloadpage;
-       animation-duration: 1s;
-           }
-         }
-         @media only screen and (max-width: 992px) {
-       
-            body {
-                 transition: all 500ms ease-in-out !important;
-           transform-origin: top left;
-           transform: scale(0.7);
-           animation-name: reloadpage;
-           animation-duration: 1s;
-               }
-             }@media only screen and (max-width: 768px) {
-       
-                body {
-                     transition: all 500ms ease-in-out !important;
-               transform-origin: top left;
-               transform: scale(0.6);
-               animation-name: reloadpage;
-               animation-duration: 1s;
-                   }
-                 }@media only screen and (max-width: 576px) {
-       
-                    body {
-                         transition: all 500ms ease-in-out !important;
-                   transform-origin: top left;
-                   transform: scale(0.8);
-                   animation-name: reloadpage;
-                   animation-duration: 1s;
-                       }
-                     }
-                     @media only screen and (max-width: 588px) {
-       
-                        body {
-                             transition: all 500ms ease-in-out !important;
-                       transform-origin: top left;
-                       transform: scale(0.6);
-                       animation-name: reloadpage;
-                       animation-duration: 1s;
-                           }
-                         }
-                         @media only screen and (max-width: 544px) {
-       
-                            body {
-                                 transition: all 500ms ease-in-out !important;
-                           transform-origin: top left;
-                           transform: scale(0.5);
-                           animation-name: reloadpage;
-                           animation-duration: 1s;
-                           left: 0;
-                               }
-                             }
-                             @media only screen and (max-width: 455px) {
-       
-                                body {
-                                     transition: all 500ms ease-in-out !important;
-                               transform-origin: top left;
-                               transform: scale(0.4);
-                               animation-name: reloadpage;
-                               animation-duration: 1s;
-                                   }
-                                 }
-                                 @media only screen and (max-width: 360px) {
-       
-                                    body {
-                                         transition: all 500ms ease-in-out !important;
-                                   transform-origin: top left;
-                                   transform: scale(0.35);
-                                   animation-name: reloadpage;
-                                   animation-duration: 1s;
-                                   left: 0;
-                                       }
-                                     }
-                                     @media only screen and (max-width: 311px) {
-       
-                                        body {
-                                             transition: all 500ms ease-in-out !important;
-                                       transform-origin: top left;
-                                       transform: scale(0.3);
-                                       animation-name: reloadpage;
-                                       animation-duration: 1s;
-                                       left: 0;
-                                           }
-                                         }
-                                         @media only screen and (max-width: 270px) {
-       
-                                            body {
-                                                 transition: all 500ms ease-in-out !important;
-                                           transform-origin: top left;
-                                           transform: scale(0.2);
-                                           animation-name: reloadpage;
-                                           animation-duration: 1s;
-                                           left: 0;
-                                               }
-                                             }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.8);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.7);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.6);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.8);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 588px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.6);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 544px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.5);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 455px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.4);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.35);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 311px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.3);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 270px) {
+  body {
+    transition: all 500ms ease-in-out !important;
+    transform-origin: top left;
+    transform: scale(0.2);
+    animation-name: reloadpage;
+    animation-duration: 1s;
+    left: 0;
+  }
+}
